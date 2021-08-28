@@ -1,0 +1,362 @@
+*{
+    /* box-sizing: border-box; */
+    margin: 0px;
+}
+
+.header {
+    padding: 20px 20px;
+}
+
+header {
+    background-color: rgb(255, 220, 154);
+}
+
+.logoname {
+    display: flex;
+    padding: 1% 1%;
+}
+
+.mainlogo {
+    width: 10%;
+}
+
+.eventfairies {
+    font-size: 5vw;
+    padding: 2% 2%;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    color: white;
+}
+
+.topnav {
+    overflow: hidden;
+    margin-top: 10px;
+}
+  
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 25px;
+    margin: 0 5%;
+}
+
+
+
+.topnav a:hover {
+    background-color: rgb(172, 35, 35);
+    color: white;
+}
+  
+.topnav a.active {
+    background-color:rgb(172, 35, 35);
+    color: white;
+}
+  
+.topnav .icon {
+    display: none;
+}
+  
+
+img.logo {
+    height: 75px;
+    padding-left: 25px;
+
+
+}
+
+/* back to top button */
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: red; 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px;
+    border-radius: 10px; 
+    font-size: 18px; 
+}
+  
+#myBtn:hover {
+    background-color: #555;
+}
+
+
+
+
+/* main  */
+
+.quote {
+    margin-top: 1%;
+    color: rgb(153, 153, 255);
+}
+
+.quote h1 {
+    text-align: center;
+    font-size: 4vw;
+}
+
+.section h1{
+    text-align: center;
+    font-size: 7vw;
+    padding-bottom: 3%;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+}
+
+.work h2 {
+    text-align: center;
+    font-size: 5.5vw;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+}
+
+.about p, .services h2{
+    font-family: cursive, Apple Chancery;
+}
+
+.about {
+    padding: 2% 15%;
+    background-color: rgb(198, 239, 253);
+    color: white;
+}
+
+.about p {
+    font-size: 2.5vw;
+}
+
+.services {
+    padding-top: 4%;
+    background-color: rgb(190, 255, 190);
+    color: darkgreen;
+}
+
+.service {
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.service h2 {
+    margin-bottom: 2%;
+    font-size: 4vw
+}
+
+
+.work{
+    background-color: thistle;
+    padding-top: 3%;
+    padding-bottom: 1%;
+}
+.row1 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-left: 10%;
+}
+
+.column1 {
+    flex: 30%;
+    max-width: 30%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.row2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-left: 17%;
+}
+
+.column2 {
+    flex: 40%;
+    max-width: 40%;
+    padding: 0 4px;
+}
+
+.row3 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-left: 10%;
+}
+.column3 {
+    flex: 30%;
+    max-width: 30%;
+    padding: 0 4px;
+}
+
+.row4 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-left: 17%;
+    height: 20%;
+}
+.column4 {
+    flex: 40%;
+    max-width: 40%;
+    padding: 0 4px;
+    overflow: hidden;
+}
+
+.row {
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.356);
+}
+
+.part {
+    margin: 2% 3%;
+    flex: 15%;
+    color: white;
+}
+
+.footerul a {
+    text-decoration: none;
+    color: white;
+}
+
+.part ul {
+    padding: 0;
+}
+
+.part li {
+    list-style-type: none;
+    padding: 5%;
+}
+
+.footimg {
+    width: 9%;
+    padding-right: 4%;
+}
+
+#insta {
+    width: 75%;
+    padding-top: 10%;
+}
+
+
+
+
+
+/* image collage */
+@media screen and (max-width: 700px) {
+    .row {
+        margin-left: 15%;
+    }
+    .column {
+        flex: 40%;
+        max-width: 40%;
+    }
+    .row2a {
+        margin-left: 10%;
+    }
+    .row3 {
+        margin-left: 10%;
+    }
+    .row4 {
+        margin-left: 10%;
+    }
+}
+
+
+
+/* top navigation */
+@media screen and (max-width: 640px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+}
+  
+@media screen and (max-width: 640px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .topnav a {
+        float: right;
+        font-size: 4vw;
+    }
+}
+
+/* headings setup */
+/* .section h1 .work h2  .service h2*/
+@media screen and (min-width: 751px) {
+    .section h1 {
+        font-size: 4vw;
+    }
+    .work h2 {
+        font-size: 3.5vw;
+    }
+    .service h2 {
+        font-size: 2vw;
+    }
+}
+
+/* .quote */
+@media screen and (min-width: 1300px) {
+    .quote h1 {
+        font-size: 2.5vw;
+    }
+}
+
+/* .about p */
+@media screen and (min-width: 1200px) {
+    .about p {
+        font-size: 2vw;
+    }
+}
+
+/* .topnav a */
+@media screen and (min-width: 1750px) {
+    .topnav a {
+        font-size: 1vw;
+    }
+}
+
+
+
+@media screen and (min-width: 1800px) {
+    footer {
+        font-size: 150%;
+    }
+}
+
+/* handles */
+@media screen and (min-width: 649px) and (max-width: 902px) {
+    #insta {
+        width: 30%;
+        padding-top: 2%;
+    }
+}
+
